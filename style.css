@@ -1,0 +1,27 @@
+.output
+        {
+        background-color: aquamarine;
+         height: 90vh;
+        width: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+        cursor: grab;
+        }
+
+.box{
+    position: relative;
+    left:50%;
+    top:50%; 
+    width: 90px;
+    height:150px;
+    border-radius: 15px;
+    background-image:url('https://1.downloader.disk.yandex.ru/preview/7ffd9979725242a0eb1f66894dbed877f724c0c1ca541b7d9284ae8d8e9c98d1/inf/iX2yCw6VezIavy87sDA4iIbPDHpvxEJ_bi0ghXyQJRnGfbVYJi9uU7xPXHR7aJJNrkSpIGQnbnnKXRYHPQlWzg%3D%3D?uid=36830458&filename=SANYA2.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=36830458&tknv=v2&size=1583x784');
+    background-size: 90px;
+}
+.s{
+    color:green;
+}
+.a{
+    color:red;
+    float:right;
+}
