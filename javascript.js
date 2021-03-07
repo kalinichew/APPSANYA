@@ -1,13 +1,6 @@
 alert("УХВАТИ САШУ, ЕСЛИ СМОЖЕШЬ КОНЕЧНО");
     
-    
-     var music = document.getElementById("music")
-  
-  document.addEventListener("click", function() {
-  music.play()
-  })
-    
-    
+
     
     
         const output = document.querySelector(".output");
@@ -51,7 +44,7 @@ alert("УХВАТИ САШУ, ЕСЛИ СМОЖЕШЬ КОНЕЧНО");
         })
 
         function move(){
-            let speed = Math.random()*15+ 10;
+            let speed = Math.random()*15 + 10;
             const box = document.querySelector(".box");
             let bounds = output.getBoundingClientRect();
             box.steps--;
