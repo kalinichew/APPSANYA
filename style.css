@@ -333,7 +333,7 @@ button {
 .start-button:focus-visible,
 .restart-button:focus-visible,
 .box:focus-visible {
-    outline: 3px solid white;
+    outline: 3px solid var(--accent);
     outline-offset: 4px;
 }
 
