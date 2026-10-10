@@ -13,6 +13,7 @@
     const restartButton = document.querySelector(".restart-button");
 
     const levels = [10, 20, 150];
+    const levelSpeedMultipliers = [1, 1.4, 1.8];
     const levelMessages = [
         { minimum: 0.95, text: "Остался всего один! Ты уже почти поймал Саню." },
         { minimum: 0.8, text: "Финиш рядом! Ещё немного — и уровень твой." },
@@ -37,7 +38,8 @@
 
     function randomDirection() {
         const angle = Math.random() * Math.PI * 2;
-        const speed = 145 + Math.random() * 125;
+        const baseSpeed = 145 + Math.random() * 125;
+        const speed = baseSpeed * levelSpeedMultipliers[levelIndex];
         velocityX = Math.cos(angle) * speed;
         velocityY = Math.sin(angle) * speed;
         nextTurnAt = performance.now() + 420 + Math.random() * 760;
