@@ -1,6 +1,5 @@
 (() => {
     const output = document.querySelector(".output");
-    const messageOut = document.querySelectorAll(".message span");
     const scoreOut = document.querySelector(".s");
     const welcome = document.querySelector(".welcome");
     const startButton = document.querySelector(".start-button");
@@ -203,12 +202,6 @@
         updateProgress();
         startGame();
     }
-
-    output.addEventListener("pointermove", (event) => {
-        const bounds = output.getBoundingClientRect();
-        messageOut[0].textContent = String(Math.round(event.clientX - bounds.left));
-        messageOut[1].textContent = String(Math.round(event.clientY - bounds.top));
-    });
 
     startButton.addEventListener("click", startGame);
     restartButton.addEventListener("click", restartGame);
