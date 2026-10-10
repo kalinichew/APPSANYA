@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111827">
     <title>GAME</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="message">
+    <main class="game-shell">
+        <header class="message" aria-label="Счёт игры">
+            <div class="coordinates" aria-live="polite">
+                <span class="coordinate">X:<span class="x">0</span></span>
+                <span class="coordinate">Y:<span class="y">0</span></span>
+            </div>
+            <div class="score-card">
+                <span class="score-label">Сколько раз ты ухватил Саню:</span>
+                <span class="s" aria-live="polite">0</span>
+            </div>
+        </header>
 
-        X:<span class="x">0</span>
-        Y:<span class="y">0</span>
-        
-        <div class="a">Сколько раз ты ухватил Саню:<span class="s">0</span></div>
+        <section class="output" aria-label="Игровое поле"></section>
+    </main>
+
+    <div class="welcome is-open" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+        <div class="welcome-card">
+            <div class="welcome-art" aria-hidden="true">🏃</div>
+            <p class="welcome-kicker">Проверим реакцию?</p>
+            <h1 id="welcome-title">УХВАТИ САШУ, ЕСЛИ СМОЖЕШЬ КОНЕЧНО</h1>
+            <button class="start-button" type="button">Начать игру <span aria-hidden="true">→</span></button>
+        </div>
     </div>
-    <audio src="pesnya_dlya_sany.mp3"></audio>
-    <div class="output"></div>
-    
 
-<script type="text/javascript" src="javascript.js"></script>
+    <audio src="pesnya_dlya_sany.mp3"></audio>
+    <script src="javascript.js"></script>
 </body>
 </html>
-
