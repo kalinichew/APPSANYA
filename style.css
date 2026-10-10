@@ -57,19 +57,6 @@ button {
     backdrop-filter: blur(14px);
 }
 
-.coordinates {
-    display: flex;
-    gap: 14px;
-    color: var(--muted);
-    font-size: 13px;
-    font-variant-numeric: tabular-nums;
-}
-
-.coordinate span {
-    margin-left: 4px;
-    color: var(--ink);
-}
-
 .level-panel {
     display: flex;
     flex: 0 0 auto;
@@ -347,11 +334,6 @@ button {
         min-height: 54px;
         padding: 8px 11px;
         border-radius: 15px;
-    }
-
-    .coordinates {
-        gap: 8px;
-        font-size: 11px;
     }
 
     .score-card {
