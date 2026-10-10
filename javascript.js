@@ -104,6 +104,7 @@
             true
         );
         messageTimeout = window.setTimeout(updateProgress, 2400);
+        box.classList.remove("is-caught");
         placeAtRandom();
     }
 
