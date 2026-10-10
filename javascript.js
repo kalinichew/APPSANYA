@@ -25,6 +25,8 @@
 
     function clampPosition() {
         if (!box) return;
+        box.style.maxWidth = output.clientWidth + "px";
+        box.style.maxHeight = output.clientHeight + "px";
         const maxX = Math.max(0, output.clientWidth - box.offsetWidth);
         const maxY = Math.max(0, output.clientHeight - box.offsetHeight);
         x = Math.max(0, Math.min(x, maxX));
