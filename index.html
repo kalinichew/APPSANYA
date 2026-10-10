@@ -20,6 +20,17 @@
             </div>
         </header>
 
+        <section class="level-panel" aria-label="Прогресс уровня">
+            <div class="level-heading">
+                <span class="level-name">Уровень 1 из 3</span>
+                <span class="level-count"><span class="level-caught">0</span> / <span class="level-target">10</span></span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Захваты на текущем уровне" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="encouragement" aria-live="polite">Вперёд! Поймай Саню 10 раз.</p>
+        </section>
+
         <section class="output" aria-label="Игровое поле"></section>
     </main>
 
@@ -29,6 +40,16 @@
             <p class="welcome-kicker">Проверим реакцию?</p>
             <h1 id="welcome-title">УХВАТИ САШУ, ЕСЛИ СМОЖЕШЬ КОНЕЧНО</h1>
             <button class="start-button" type="button">Начать игру <span aria-hidden="true">→</span></button>
+        </div>
+    </div>
+
+    <div class="finish-screen" role="dialog" aria-modal="true" aria-labelledby="finish-title" hidden>
+        <div class="finish-card">
+            <div class="welcome-art" aria-hidden="true">🏆</div>
+            <p class="welcome-kicker">Все уровни пройдены</p>
+            <h2 id="finish-title">Саня пойман!</h2>
+            <p class="finish-copy">Отличная реакция! Ты справился со всеми уровнями.</p>
+            <button class="restart-button" type="button">Сыграть ещё раз <span aria-hidden="true">↻</span></button>
         </div>
     </div>
 
